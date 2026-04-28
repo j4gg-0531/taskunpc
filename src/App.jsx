@@ -1,8 +1,12 @@
+import Header from "./components/Header";
+import ListaTareas from "./components/ListaTareas";
+import "./App.css";
+
 function App() {
   return (
-    <div>
-      <h1>TaskUPC — Mi Gestor Académico</h1>
-      <p>Proyecto creado por Juan Garcia</p>
+    <div style={{ maxWidth: "700px", margin: "0 auto", padding: "24px" }}>
+      <Header />
+      <ListaTareas />
     </div>
   );
 }
