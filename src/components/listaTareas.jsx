@@ -1,11 +1,10 @@
-// src/components/ListaTareas.jsx
-import TareaCard from './TareaCard';
-import { tareasIniciales } from '../data/tareas';
+import { tareasIniciales } from "../data/tareas";
+import TareaCard from "./TareaCard";
 
 function ListaTareas() {
   return (
     <section>
-      <h2>Mis Pendientes</h2>
+      <h2>Mis Tareas</h2>
       {tareasIniciales.map((tarea) => (
         <TareaCard key={tarea.id} {...tarea} />
       ))}
