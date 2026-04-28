@@ -1,8 +1,8 @@
-import { tareasIniciales } from "../data/tareas";
+import { useTareas } from "../context/TareasContext";
 
 function Header() {
-  // Calculamos las pendientes aquí mismo
-  const pendientes = tareasIniciales.filter((t) => !t.completada).length;
+  const { tareas } = useTareas();
+  const pendientes = tareas.filter((t) => !t.completada).length;
 
   return (
     <header style={{
